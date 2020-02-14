@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head>
+	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet"
+      href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+      integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
+      crossorigin="anonymous">
+	  <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+	<div id="myBoard" style="width: 400px"></div>
+	<script src="sketch.js"></script>
+	<script src="deco.js"></script>
+	<script src="Hall of Fame.js"></script>
+    
+</body></html>
+
+<!--
+https://ko.dupliceopportunita.com/item/a-step-by-step-guide-to-building-a-simple-chess-ai-0502cf/
+간단한 체스 AI 제작을위한 단계별 가이드
+
+https://chessboardjs.com/examples#2005
+chessboard.js
+
+https://github.com/jhlywa/chess.js/blob/master/README.md
+chess.js
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+The flags field in verbose mode may contain one or more of the following values:
+
+'n' - a non-capture
+'b' - a pawn push of two squares
+'e' - an en passant capture
+'c' - a standard capture
+'p' - a promotion
+'k' - kingside castling
+'q' - queenside castling
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+https://regexr.com/
+https://androphil.tistory.com/144
+이거 왜 했냐
+/([A-Z])?([a-h]?[1-8]?x)?([a-h][1-8])(\+|#)?|(O-O)/
+
+var re = /([A-Z])?([a-h]?[1-8]?x)?([a-h][1-8])(\+|#)?|(O-O)/
+var arr = temp_str.replace(re, "$1,$2,$3,$4,$5").split(",")
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+var asdf = fen_janbul(chess.fen())
+
+asdf
+
+var asdfasdf = fen_janbul(asdf)
+
+asdfasdf
+
+DCD(asdfasdf)
+
+AI1.first_AI_thinking(2)
+
+
+-->
